@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <img src="call.png" class="image"/>
+        <h1 class="heading">Tip Calculator</h1>
+        <form class="tip">
+            
+            <div class="box1">
+                <div class="input1">
+                <label class="label1">Bill Amount</label>
+                <input type="text" class="calcu" id="billAmount"/>
+                </div>
+                <div class="input1">
+                <label class="label1">Percentage Tip</label>
+                <input type="text" class="calcu" id="percentageTip"/>
+            </div>
+            </div>
+            <div class="box2">
+                <div class="input1">
+                <label class="label1">Tip Amount</label>
+                <input type="text" class="calcu" id="tipAmount"/>
+                </div>
+                <div  class="input1">
+                <label class="label1">Total</label>
+                <input type="text" class="calcu" id="total"/>
+            </div>
+            </div>
+            <p class="para" id="errorMessage"></p>
+            <button class="button" id="button" onclick="isCalculate(event)">CALCULATE</button>
+        </form>
+    </div>
+   <script src="index.js"></script>
+</body>
+</html>
